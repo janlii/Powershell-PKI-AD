@@ -12,3 +12,7 @@ Powershell script to create an issuance policy (OID, name and CPS URL) in Active
 
 ## UseSubjectAltName.txt
 Some information about the UseSubjectAltName (https://support.microsoft.com/en-us/help/4043463/how-to-disable-the-subject-alternative-name-for-upn-mapping) setting.
+
+More information
+https://github.com/MicrosoftDocs/windowsserverdocs/blob/master/WindowsServerDocs/security/kerberos/whats-new-in-kerberos-authentication.md
+
