@@ -1,0 +1,13 @@
+KDC support for Key Trust account mapping
+
+Beginning with Windows Server 2016, domain controllers have support for Key Trust account mapping as well as fallback
+to existing AltSecID and User Principal Name (UPN) in the SAN behavior.
+
+When UseSubjectAltName is set to:
+0: Explicit mapping is required. Then there must be either:
+- Key Trust (new with Windows Server 2016)
+- ExplicitAltSecID
+1: Implicit mapping is allowed (default):
+- If Key Trust is configured for account, then it is used for mapping (new with Windows Server 2016).
+- If there is no UPN in the SAN, then AltSecID is attempted for mapping.
+-	If there is a UPN in the SAN, then UPN is attempted for mapping
