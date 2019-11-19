@@ -45,7 +45,7 @@ $altName1.InitializeFromString($XCN_CERT_ALT_NAME_DNS_NAME, $computerDnsName)
 $altNames.Add($altName1)
 
 $altName2 = New-Object -ComObject X509Enrollment.CAlternativeName
-$altName2.InitializeFromString($XCN_CERT_ALT_NAME_DNS_NAME, $domainNameDns)
+$altName2.InitializeFromString($XCN_CERT_ALT_NAME_DNS_NAME, $domainDnsName)
 $altNames.Add($altName2)
 
 $altName3 = New-Object -ComObject X509Enrollment.CAlternativeName
