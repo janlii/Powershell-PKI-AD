@@ -11,7 +11,7 @@
   .PARAMETER IssuancePolicyCps
   URL to issuance policy CPS (Certificate Practice Statement)
   .EXAMPLE
-  New-ADPolicyOID.ps1 '1.2.752.146.101.2' 'Swedish Social Insurance Agency Auth Certificate Policy' 'http://www.myndighetsca.se/cps/'
+  New-ADIssuancePolicy.ps1 '1.2.752.146.101.2' 'Swedish Social Insurance Agency Auth Certificate Policy' 'http://www.myndighetsca.se/cps/'
   .NOTES
   Must be run with Enterprise Admin permissions.
   https://technet.microsoft.com/en-us/library/bf1b7271-5d9b-4880-bc08-c2b70c8623e3
