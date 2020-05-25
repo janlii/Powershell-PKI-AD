@@ -2,7 +2,7 @@
   .SYNOPSIS
   Displays the public key hash for the TPM endorsement key.
   .DESCRIPTION
-  Can be used to collect TPM endorsement keys for used with key attestation. This script uses the SHA256 algorithm to hash the public key.
+  Can be used to collect TPM endorsement keys for use with key attestation. This script uses the SHA256 algorithm to hash the public key.
   This script can be executed with normal user privileges.
 #>
 
