@@ -21,7 +21,7 @@ $dc = $domain.PDCEmulator
 
 # Get CA that issues certificates for the template name
 
-$certificateAuthorityNames = @()
+[string[]]$certificateAuthorityNames = @()
 $policyServerAD = New-Object -ComObject X509Enrollment.CX509EnrollmentPolicyActiveDirectory
 $policyServerAD.Initialize($dc, $null, 2, $false, 2)
 $policyServerAD.SetCredential(0, 2, $null, $null)
@@ -37,5 +37,5 @@ foreach ($template in $policyServerAD.GetTemplates()) {
 if ($certificateAuthorityNames.Count -eq 0) {
     throw "No CA found for certificatetemplate '$($CertificateTemplateName)'"
 }
-Write-Host $certificateAuthorityNames
+$certificateAuthorityNames
 
