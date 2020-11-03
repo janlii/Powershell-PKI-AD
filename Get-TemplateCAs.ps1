@@ -1,20 +1,12 @@
 <#
   .SYNOPSIS
-  Script that creates an issuance policy object (OID, name and CPS path) in Active Directory based on an existing OID.
+  Script that gets all Certification Authorities that issues certificates from a given certificate template.
   .DESCRIPTION
-  The issuance policy OID is registered in Active Directory in CN=OID,CN=Public Key Services,CN=Services,CN=Configuration,DC=XXX,DC=SE.
-  Equivalent to the "certutil -oid" command.
-  .PARAMETER IssuancePolicyOid
-  Issuance policy OID to register in Active Directory.  
-  .PARAMETER IssuancePolicyName
-  Name of the issuance policy.
-  .PARAMETER IssuancePolicyCps
-  URL to issuance policy CPS (Certificate Practice Statement)
+  Script that gets all Certification Authorities that issues certificates from a given certificate template.
+  .PARAMETER CertificateTemplateName
+  Certificate template name to get Certification Authorities for.
   .EXAMPLE
-  New-ADIssuancePolicy.ps1 '1.2.752.146.101.2' 'Swedish Social Insurance Agency Auth Certificate Policy' 'http://www.myndighetsca.se/cps/'
-  .NOTES
-  Must be run with Enterprise Admin permissions.
-  https://technet.microsoft.com/en-us/library/bf1b7271-5d9b-4880-bc08-c2b70c8623e3
+  Get-TemplateCAs.ps1 'WebServer'
 #>
 [CmdletBinding()]
 Param(
