@@ -2,9 +2,9 @@
   .SYNOPSIS
   Script that gets all Certification Authorities that issues certificates from a given certificate template.
   .DESCRIPTION
-  Script that gets all Certification Authorities that issues certificates from a given certificate template.
+  Returns an array of all Certification Authorities that issues certificates from the given certificate template.
   .PARAMETER CertificateTemplateName
-  Certificate template name to get Certification Authorities for.
+  Short name (without spaces) to of certificate template name to get Certification Authorities for.
   .EXAMPLE
   Get-TemplateCAs.ps1 'WebServer'
 #>
