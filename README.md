@@ -4,6 +4,9 @@ Powershell scripts and tools used to manage your Active Directory and PKI enviro
 ## Get-TPMEKPub.ps1
 Powershell script to display the public key hash (SHA256) for the TPM endorsement key.
 
+## Get-TemplateCAs.ps1
+Powershell script to display all certification authorities that issues certificates from a given certificate template name.
+
 ## New-ADIssuancePolicy.ps1
 Powershell script to create an issuance policy (OID, name and CPS URL) in Active Directory based on an existing OID information.
 
