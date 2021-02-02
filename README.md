@@ -1,5 +1,5 @@
 # Powershell-PKI-AD
-Powershell scripts and tools used to manage your Active Directory and PKI environment.
+Powershell scripts and tools used to manage your Active Directory, ADFS and PKI environment.
 
 ## Get-TPMEKPub.ps1
 Powershell script to display the public key hash (SHA256) for the TPM endorsement key.
