@@ -1,15 +1,15 @@
 ﻿<#
   .SYNOPSIS
-  Skriptet bygger en URL som kan användas med IDP initierad inloggning och "relay state".
+  Script used to generate URL with RelayState parameter for use with ADFS IDP initiated signon.
   .DESCRIPTION
   .PARAMETER AdfsServerName
-  Namn på ADFS server som skall användas. Anges som FQDN.
+  Name of ADFS server (as FQDN).
   .PARAMETER RelyingPartyIdentifier
-  Identifiere för en "relying party". Hittas under fliken "Identifiers" för en "relying party" i ADFS.
+  Relying party identifier. Found in the "Identifiers" tab for a relying party in ADFS.
   .EXAMPLE
-  Get-RelayStateUrl 'fs.skatteverket.se' 'https://jira.rsv.se/plugins/servlet/samlsso'
+  Get-RelayStateUrl 'fs.acme.com' 'urn:microsoft:adfs:claimsxray'
   .NOTES
-  Parametern 'RelayStateForIdpInitiatedSignOnEnabled' måste vara aktiverad i ADFS!
+  The 'RelayStateForIdpInitiatedSignOnEnabled' parameter must be enabled in ADFS.
 #>
 [CmdletBinding()]
 Param(
