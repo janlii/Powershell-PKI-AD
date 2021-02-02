@@ -21,7 +21,7 @@ Param(
 )
 
 Add-Type -AssemblyName System.Web
-$adfsIdpInitiated = "https://$($AdfsServerName)/adfs/ls/IdpInitiatedSignOn.aspx?"
+$adfsIdpInitiated = "https://$($AdfsServerName)/adfs/ls/IdpInitiatedSignOn.aspx"
 $encodedIdentifier = [System.Web.HttpUtility]::UrlEncode($RelyingPartyIdentifier)
 $rpid = 'RPID=' + $encodedIdentifier
 $encodedRpid = [System.Web.HttpUtility]::UrlEncode($rpid)
