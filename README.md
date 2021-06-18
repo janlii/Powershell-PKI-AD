@@ -2,7 +2,7 @@
 Powershell scripts and tools used to manage your Active Directory, ADFS and PKI environment.
 
 ## Get-TPMEKPub.ps1
-Powershell script to display the public key hash (SHA256) for the TPM endorsement key.
+Powershell script to display the public key hash (SHA256) for the TPM endorsement key. This script can be executed with normal user privileges.
 
 ## Get-TemplateCAs.ps1
 Powershell script to display all certification authorities that issues certificates from a given certificate template name.
