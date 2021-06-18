@@ -18,5 +18,8 @@ Powershell script to create an issuance policy (OID, name and CPS URL) in Active
 ## New-AuthPolicyForDomainAdmins.ps1
 Powershell script that creates an Authentication Policy for Tier0 user accounts/devices and assigns it to Domain Admins. Also adds Domain Admins to the Protected Users group.
 
+## New-KdcOfflineRequest.ps1
+Powershell script that creates a certificate request (CSR) for a "Kerberos Authentication" certificate for installation on domain controllers. Can be used when no internal PKI is in use.
+
 ## Test-TcpConnection.ps1
 Powershell script to test TCP connectivity with timeout value.
