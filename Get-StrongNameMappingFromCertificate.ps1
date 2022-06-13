@@ -18,13 +18,13 @@ if ((Test-Path $CertificateFile) -eq $false) {
 
 $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2 -ArgumentList $CertificateFile
 
-# Fix issuer
+# Reverse issuer
 
 $parts = $cert.Issuer.Split(',', [System.StringSplitOptions]::RemoveEmptyEntries).Trim()
 [array]::Reverse($parts)
 $reversedIssuer = $parts -join ','
 
-# Fix serialnumber
+# Reverse serialnumber
 
 $parts = $cert.SerialNumber -split "(\w{2})" -match "\w"
 [array]::Reverse($parts)
