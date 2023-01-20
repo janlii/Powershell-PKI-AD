@@ -1,4 +1,4 @@
-Function Get-CertificateSanDnsNames
+Function Get-CertificateSanNames
 {
     [CmdletBinding()]
     Param(
