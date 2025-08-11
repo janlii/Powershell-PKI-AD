@@ -8,7 +8,7 @@ Path to a certificate file.
 .EXAMPLE
 Test-CertificateRevocation.ps1 C:\temp\janlii_efos.cer
 .EXAMPLE 
-Test-CertificateRevocation.ps1 C:\temp\prokunddbp05.cer
+Test-CertificateRevocation.ps1 C:\temp\adfsserver01.cer
 #>
 [CmdletBinding()]
 Param(
