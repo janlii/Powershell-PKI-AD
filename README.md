@@ -7,6 +7,9 @@ Powershell script to display the public key hash (SHA256) for the TPM endorsemen
 ## Get-TemplateCAs.ps1
 Powershell script to display all certification authorities that issues certificates from a given certificate template name.
 
+## Grant-LocalMachinePrivateKeyReadPermissions.ps1
+Powershell script that grants a user account read permissions to the private key of a certificate in the local machine store.
+
 ## HelperFunctions.psm1
 Powershell module that simplifies connecting to servers using RDP or Powershell remoting. Create a folder named "HelperFunctions" in %ProgramFiles%\WindowsPowerShell and copy the file into the folder. From Powershell you can now use the following commands:
 - Start-RDP servername
