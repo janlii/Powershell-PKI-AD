@@ -12,6 +12,9 @@ Powershell module that simplifies connecting to servers using RDP or Powershell 
 - Start-RDP servername
 - Start-RemotePS servername
 
+## Install-GroupManagedServiceAccount.ps1
+Script that installs a Group Managed Service Account (GMSA) on a server, without having to install the 'RSAT-AD-Tools' feature.
+
 ## New-ADIssuancePolicy.ps1
 Powershell script to create an issuance policy (OID, name and CPS URL) in Active Directory based on an existing OID information.
 
