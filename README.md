@@ -24,5 +24,8 @@ Powershell script that creates an Authentication Policy for Tier0 user accounts/
 ## New-KdcOfflineRequest.ps1
 Powershell script that creates a certificate request (CSR) for a "Kerberos Authentication" certificate for installation on domain controllers. Can be used when no internal PKI is in use.
 
+## Test-CertificateRevocation.ps1
+Powershell script that can be used to check certificate revocation.
+
 ## Test-TcpConnection.ps1
 Powershell script to test TCP connectivity with timeout value.
