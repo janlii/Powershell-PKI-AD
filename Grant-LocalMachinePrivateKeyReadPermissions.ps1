@@ -24,9 +24,7 @@ if ($certificate -eq $null) {
     throw "No certificate with thumbprint '$($CertificateThumbprint)' found in LocalMachine store"
 }
 
-$privateKey = [System.Security.Cryptography.X509Certificates.RSACertificateExtensions]::GetRSAPrivateKey($certificate)
-$keyName = $privateKey.Key.UniqueName
-$keyPath = "$env:ALLUSERSPROFILE\Microsoft\Crypto\Keys\$keyName"
+$keyPath = Join-Path -Path "$Env:AllUsersProfile\Microsoft\Crypto\RSA\MachineKeys" -ChildPath $certificate.PrivateKey.CspKeyContainerInfo.UniqueKeyContainerName
 $permissions = Get-Acl -Path $keyPath
 $rule = New-Object Security.AccessControl.FileSystemAccessRule $userName, "Read", Allow
 $permissions.AddAccessRule($rule)
